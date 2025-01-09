@@ -26,9 +26,6 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
 Estructura del Proyecto
 El proyecto sigue la siguiente estructura:
-
-bash
-Copiar código
 src/
   assets/         # Archivos estáticos como imágenes y fuentes
   components/     # Componentes de React reutilizables
