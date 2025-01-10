@@ -29,7 +29,6 @@ export const SubirImagen: React.FC<ImageUploaderProps> = ({ currentImage, onImag
       );
 
       const data = await response.json();
-      console.log(data.secure_url);
       onImageUpload(data.secure_url);
       
     } catch (error) {
