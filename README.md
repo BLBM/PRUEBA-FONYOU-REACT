@@ -1,50 +1,91 @@
-# React + TypeScript + Vite
+# Proyecto React con Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada con **React** y **Vite**, utilizando **Tailwind CSS** para los estilos y **TypeScript** para la tipificación estática. La configuración se ha optimizado para ofrecer una experiencia de desarrollo rápida y fluida.
 
-Currently, two official plugins are available:
+## Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Librería de JavaScript para construir interfaces de usuario.
+- **Vite**: Herramienta de construcción y desarrollo ultra rápida para aplicaciones modernas.
+- **TypeScript**: Superset de JavaScript que agrega tipificación estática.
+- **Tailwind CSS**: Framework CSS de utilidad para diseñar de manera rápida y eficiente.
+- **React Router DOM**: Para gestionar las rutas de la aplicación.
+- **ESLint**: Para mantener un código limpio y consistente.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (recomendado LTS)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/) (si prefieres usar otro gestor de dependencias)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/BLBM/PRUEBA-FONYOU-REACT.git
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Estructura del Proyecto
+
+El proyecto sigue la siguiente estructura:
+
+src/
+  assets/         # Archivos estáticos como imágenes y fuentes
+  
+  components/     # Componentes de React reutilizables
+  
+  pages/          # Páginas de la aplicación
+  
+  router/         # Configuración de rutas con react-router-dom
+  
+  App.tsx         # Componente raíz de la aplicación
+  
+  main.tsx        # Punto de entrada de la aplicación
+  
+tailwind.config.js # Configuración de Tailwind CSS
+
+vite.config.ts    # Configuración de Vite
+
+
+## Dependencias
+Este proyecto utiliza las siguientes dependencias:
+
+dependencies
+
+lucide-react: Biblioteca de iconos para React.
+
+react: Biblioteca de JavaScript para interfaces de usuario.
+
+react-dom: Módulo necesario para trabajar con el DOM en React.
+
+react-router-dom: Librería para gestionar rutas en aplicaciones React.
+
+devDependencies
+
+@eslint/js: Configuración básica de ESLint.
+
+@types/react: Tipos de TypeScript para React.
+
+@types/react-dom: Tipos de TypeScript para React DOM.
+
+@vitejs/plugin-react: Plugin de Vite para habilitar el soporte de React.
+
+autoprefixer: Herramienta que agrega prefijos de CSS automáticamente.
+
+eslint: Herramienta para el análisis estático de código.
+
+eslint-plugin-react-hooks: Plugin de ESLint para asegurar el uso correcto de los hooks de React.
+
+eslint-plugin-react-refresh: Plugin de ESLint para React Fast Refresh.
+
+globals: Configuración de variables globales para ESLint.
+
+postcss: Herramienta para transformar el CSS.
+
+tailwindcss: Framework de CSS.
+
+typescript: Superset de JavaScript con soporte para tipado estático.
+
+typescript-eslint: Plugin de ESLint para TypeScript.
+
+vite: Herramienta de desarrollo y construcción rápida.
